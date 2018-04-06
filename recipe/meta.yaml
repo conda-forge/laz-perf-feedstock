@@ -21,6 +21,7 @@ requirements:
   build:
     - cmake
     - toolchain
+    - python  # [win]
     - vc 14  # [win]
   run:
     - vc 14  # [win]

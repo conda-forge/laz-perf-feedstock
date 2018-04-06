@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  skip: True  # [win]
+  number: 1
+  skip: True  # [win and py!=36]
   features:
     - vc14  # [win]
   
@@ -28,6 +28,7 @@ requirements:
 test:
   commands:
     - test -d ${PREFIX}/include/laz-perf  # [not win]
+    - if not exist %LIBRARY_INC%\\laz-perf  # [win]
 
 about:
   home: https://github.com/hobu/laz-perf

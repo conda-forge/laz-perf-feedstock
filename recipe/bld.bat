@@ -4,7 +4,7 @@ cd build
 cmake -G "NMake Makefiles" ^
       -DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%" ^
       -DCMAKE_BUILD_TYPE:STRING=Release ^
-      -DWITH_TESTS:BOOL=OFF ^
+      -DWITH_TESTS:BOOL=ON ^
       %SRC_DIR%
 if errorlevel 1 exit 1
 

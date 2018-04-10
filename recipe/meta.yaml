@@ -29,7 +29,7 @@ requirements:
 test:
   commands:
     - test -d ${PREFIX}/include/laz-perf  # [not win]
-    - if not exist %LIBRARY_INC%\\laz-perf  # [win]
+    - if not exist %LIBRARY_INC%\\laz-perf exit 1  # [win]
 
 about:
   home: https://github.com/hobu/laz-perf

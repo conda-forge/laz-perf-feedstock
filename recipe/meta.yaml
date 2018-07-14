@@ -14,17 +14,14 @@ source:
 build:
   number: 0
   skip: True  # [win and py!=36]
-  features:
-    - vc14  # [win]
-  
+
 requirements:
   build:
     - cmake
-    - toolchain
-    - python  # [win]
-    - vc 14  # [win]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
   run:
-    - vc 14  # [win]
 
 test:
   commands:

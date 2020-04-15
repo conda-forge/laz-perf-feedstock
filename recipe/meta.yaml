@@ -1,6 +1,6 @@
 {% set name = "laz-perf" %}
-{% set version = "1.3.0" %}
-{% set sha256 = "9d4273206557e091a4faf7faa4867ecd7da55a116015fcbfb58d30e88570958e" %}
+{% set version = "1.4.0" %}
+{% set sha256 = "01993fd7387b0d0b54726ed74424411d73e0237a6ae2969057c3b0ec0529acd3" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1002
-  skip: True  # [win and py!=36]
+  number: 0
+  skip: true  # [win and py!=36]
 
 requirements:
   build:
@@ -31,7 +31,7 @@ test:
 about:
   home: https://github.com/hobu/laz-perf
   license: LGPL
-  summary: 'Alternative LAZ implementation for C++ and JavaScript'
+  summary: Alternative LAZ implementation for C++ and JavaScript
   description: |
     Alternative LAZ implementation for C++ and JavaScript..
   doc_url: https://github.com/hobu/laz-perf

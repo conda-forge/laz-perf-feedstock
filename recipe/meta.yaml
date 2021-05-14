@@ -1,6 +1,6 @@
 {% set name = "laz-perf" %}
-{% set version = "1.5.0" %}
-{% set sha256 = "75f007e18ddc8cec8c21c641c2c25ce668bcd67f0ee8cf4ebad1c740a4e21b70" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "0b088e17b7ed96333fc4d791fb78d021e37a63c97fe85dff59b19a0098df6462" %}
 
 package:
   name: {{ name|lower }}
@@ -25,8 +25,8 @@ requirements:
 
 test:
   commands:
-    - test -d ${PREFIX}/include/laz-perf  # [not win]
-    - if not exist %LIBRARY_INC%\\laz-perf exit 1  # [win]
+    - test -d ${PREFIX}/include/lazperf  # [not win]
+    - if not exist %LIBRARY_INC%\\lazperf exit 1  # [win]
 
 about:
   home: https://github.com/hobu/laz-perf

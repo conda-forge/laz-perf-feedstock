@@ -6,7 +6,7 @@ cmake -G "NMake Makefiles" ^
       -DCMAKE_BUILD_TYPE:STRING=Release ^
       -DBUILD_SHARED_LIBS=ON ^
       -Dgtest_force_shared_crt=ON ^
-      -DWITH_TESTS:BOOL=ON ^
+      -DWITH_TESTS:BOOL=OFF ^
       %SRC_DIR%
 if errorlevel 1 exit 1
 

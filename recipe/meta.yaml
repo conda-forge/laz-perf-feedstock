@@ -25,8 +25,8 @@ requirements:
 
 test:
   commands:
-    - test -d ${PREFIX}/include/lazperf  # [not win]
-    - if not exist %LIBRARY_INC%\\lazperf exit 1  # [win]
+    - test -d ${PREFIX}/include/laz-perf  # [not win]
+    - if not exist %LIBRARY_INC%\\laz-perf exit 1  # [win]
 
 about:
   home: https://github.com/hobu/laz-perf

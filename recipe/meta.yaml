@@ -8,8 +8,7 @@ package:
 
 source:
   git_url: https://github.com/hobu/{{ name }}.git
-  git_rev: updatatest
-  git_depth: 1
+  git_rev: updatetest
 
 build:
   number: 0

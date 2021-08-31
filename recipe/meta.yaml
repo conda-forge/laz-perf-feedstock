@@ -1,6 +1,6 @@
 {% set name = "laz-perf" %}
 {% set version = "2.1.0" %}
-{% set sha256 = "0ea01f37dfa0e623d64846a58c3c2f0e77f8b17b9b8ba5721c3abcdbe14ac2d5" %}
+{% set sha256 = "0812ee1fb34dbe245e89cf98cbd3ecec2f3e09db10bf679e6feb686e6908aa3d" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  skip: true  # [py!=36]
+  number: 3
 
 requirements:
   build:
@@ -21,8 +20,9 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
+    - python
   run:
-
+    - python
 test:
   commands:
     - test -d ${PREFIX}/include/lazperf  # [not win]

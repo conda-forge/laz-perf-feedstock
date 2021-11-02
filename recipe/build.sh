@@ -3,6 +3,7 @@
 set -ex
 
 if [[ "$CONDA_BUILD_CROSS_COMPILATION" == "1" ]]; then
+	echo "CROSS compilation!" 
    
     unset LDFLAGS
     unset CXXFLAGS

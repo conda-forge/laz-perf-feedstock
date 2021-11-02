@@ -2,9 +2,6 @@
 
 set -ex
 
-if [[ "$CONDA_BUILD_CROSS_COMPILATION" == "1" ]]; then
-	echo "CROSS compilation!" 
-fi
 
 cmake -G "Unix Makefiles" \
   -DCMAKE_BUILD_TYPE=Release \
@@ -13,4 +10,6 @@ cmake -G "Unix Makefiles" \
 
 make -j $CPU_COUNT
 make install
-make test
+if [[ "$CONDA_BUILD_CROSS_COMPILATION" != "1" ]]; then
+	make test
+fi

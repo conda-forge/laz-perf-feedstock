@@ -2,6 +2,7 @@
 
 set -ex
 
+
 cmake -G "Unix Makefiles" \
   -DCMAKE_BUILD_TYPE=Release \
   -DCMAKE_INSTALL_PREFIX=$PREFIX \
@@ -9,4 +10,6 @@ cmake -G "Unix Makefiles" \
 
 make -j $CPU_COUNT
 make install
-make test
+if [[ "$CONDA_BUILD_CROSS_COMPILATION" != "1" ]]; then
+	make test
+fi

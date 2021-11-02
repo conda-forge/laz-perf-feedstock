@@ -17,12 +17,9 @@ build:
 requirements:
   build:
     - cmake
-    - {{ compiler('c') }}
+    - make
     - {{ compiler('cxx') }}
-  host:
-    - python
-  run:
-    - python
+
 test:
   commands:
     - test -d ${PREFIX}/include/lazperf  # [not win]

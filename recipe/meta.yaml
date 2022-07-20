@@ -1,6 +1,6 @@
 {% set name = "laz-perf" %}
-{% set version = "3.0.0" %}
-{% set sha256 = "c7cddf133346f65ee928b1faa1e0de3c9ad484a574ec046884ef577b1c977762" %}
+{% set version = "3.1.0" %}
+{% set sha256 = "cf4dea262ca5c3e4df0166914f5f02086518a9e84c21400ba9d697d653f2f768" %}
 
 package:
   name: {{ name|lower }}

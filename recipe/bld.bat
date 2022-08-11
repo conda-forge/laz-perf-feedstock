@@ -5,6 +5,7 @@ cmake -G "NMake Makefiles" ^
       -DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%" ^
       -DCMAKE_BUILD_TYPE:STRING=Release ^
       -DBUILD_SHARED_LIBS=ON ^
+      -DCMAKE_CXX_STANDARD=17 ^
       -Dgtest_force_shared_crt=ON ^
       -DWITH_TESTS:BOOL=OFF ^
       %SRC_DIR%

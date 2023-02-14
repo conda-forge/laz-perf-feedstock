@@ -3,7 +3,7 @@
 set -ex
 
 
-cmake -G "Unix Makefiles" \
+cmake ${CMAKE_ARGS} -G "Unix Makefiles" \
   -DCMAKE_BUILD_TYPE=Release \
   -DCMAKE_INSTALL_PREFIX=$PREFIX \
   -DWITH_TESTS=ON

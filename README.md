@@ -1,11 +1,11 @@
-About laz-perf
-==============
+About laz-perf-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/laz-perf-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/hobu/laz-perf
 
 Package license: LGPL-2.1-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/laz-perf-feedstock/blob/main/LICENSE.txt)
 
 Summary: Alternative LAZ implementation for C++ and JavaScript
 
